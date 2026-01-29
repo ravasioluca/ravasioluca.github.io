@@ -14,5 +14,5 @@ abstract: >-
 authors:
   - Luca Ravasio
 links:
-  PDF: ravasioluca/ravasioluca.github.io/assets/files/PDFS/PROMYS2024.pdf
+  PDF: assets/files/PDFS/PROMYS2024.pdf
 ---
