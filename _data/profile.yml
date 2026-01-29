@@ -28,7 +28,7 @@ portrait_url: /assets/images/photos/portrait.jpg
 
 education:
 - name: Liceo Scientifico Statale Filippo Lussana
-  logo: https://www.liceolussana.edu.it/wp-content/uploads/2024/10/home-2-730x485.jpg
+  logo: https://www.liceolussana.edu.it/wp-content/uploads/2025/01/LogoLussana.png
   position: >- 
     Liceo scientifico tradizionale con seconda lingua tedesca.
   date: Sep. 2021 - Present
@@ -39,7 +39,17 @@ experience:
   position: PO
   date: Sep. 2023 - Jul. 2025
 
-#Ho partecipato al campo di matematica internazionale Maths Beyond Limits Poland 2024. Ho partecipato allo stage di fisica per liceali della scuola normale superiore di pisa 2026.
+experience:
+- name: Maths Beyond Limits Poland 2024
+  # logo: https://www.olimpiadi-informatica.it/processed_images/anpc.610c6c140bd07ded.png
+  position: Participant
+  date: Sep. 2024
+
+experience:
+- name: Stage di fisica in preparazione alla Olifis normale di pisa 2026
+  # logo: https://www.olimpiadi-informatica.it/processed_images/anpc.610c6c140bd07ded.png
+  position: Studente
+  date: Feb. 2026
 
 awards:
 # - name: Award Name 2
