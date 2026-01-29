@@ -5,7 +5,7 @@ navbar_name: "Luca Ravasio"
 positions:
 - name: Studente
 - name: Liceo Scientifico Statale Filippo Lussana
-#  logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
+  logo: https://www.liceolussana.edu.it/wp-content/uploads/2025/01/LogoLussana.png
 
 
 # email: "your@email.com"
