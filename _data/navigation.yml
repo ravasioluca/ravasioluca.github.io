@@ -6,6 +6,6 @@ pages:
 #- name: Home (Layout 2)
 #  url: /index_layout2
 - name: Pubblicazioni
-  url: /pubblicazioni
+  url: /publications
 #- name: Showcase
 #  url: /showcase
