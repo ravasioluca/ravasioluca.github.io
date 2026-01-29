@@ -50,23 +50,23 @@ experience:
   date: Feb. 2026
 
 awards:
- - name: Settimo posto Olimpiadi Italiane di AI (OIA)
+ - name: Settimo posto OIA
    date: Jan. 2026
- - name: Sedicesimo posto Olimpiadi Italiane di Informatica (OII)
-   date: Sep. 2023
- - name: Sedicesimo posto Olimpiadi Italiane di Informatica (OII)
-   date: Sep. 2024
- - name: Quarantaduesimo posto Olimpiadi Italiane di Informatica (OII)
+ - name: Quarantaduesimo posto OII
    date: Sep. 2025
- - name: Tedicesimo posto Olimpiadi di matematica a squadre 2024
-   date: May. 2024
- - name: Trentaquattresimo posto Olimpiadi di matematica a squadre 2025
+ - name: Trentaquattresimo posto GAS 2025
    date: May. 2025
- - name: Ventiduesimo posto Olimpiadi di informatica a squadre 2023
-   date: Mar. 2023
- - name: Ventunesimo posto Olimpiadi di informatica a squadre 2024
-   date: Mar. 2024
- - name: Decimo posto Olimpiadi di informatica a squadre 2025
+ - name: Decimo posto OIS 2025
    date: Mar. 2025
+ - name: Sedicesimo posto OII
+   date: Sep. 2024
+ - name: Tedicesimo posto GAS 2024
+   date: May. 2024
+ - name: Ventunesimo posto OIS 2024
+   date: Mar. 2024
+ - name: Sedicesimo posto OII
+   date: Sep. 2023
+ - name: Ventiduesimo posto OIS 2023
+   date: Mar. 2023
 # - name: A quick brown fox jumps over the lazy dog and runs away award
 #   date: 2021
