@@ -90,3 +90,6 @@ div.lazy {
     font-family: Source Code Pro, monospace;
 }
 
+.invertable {
+  filter: invert(100%);
+}
