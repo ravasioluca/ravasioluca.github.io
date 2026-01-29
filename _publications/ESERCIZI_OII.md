@@ -1,6 +1,6 @@
 ---
 title: "Repo soluzioni training.olinfo.it"
-date: 2025-12-05
+# date: 2025-12-05
 selected: true
 # pub:            "International Conference on Machine Learning (ICML)"
 # pub_pre:        "Submitted to "
