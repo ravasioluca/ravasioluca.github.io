@@ -21,23 +21,25 @@ positions:
 
 short_bio_text_justify: false
 short_bio: >-
-  Studente del Liceo Scientifico Statale Filippo Lussana. Sono stato PO negli anni 2023/2024, 2024/2025. Ho partecipato al campo di matematica internazionale Maths Beyond Limits Poland 2024. Ho partecipato allo stage di fisica per liceali della scuola normale superiore di pisa 2026.
+  Studente del Liceo Scientifico Statale Filippo Lussana.
 portrait_url: /assets/images/photos/portrait.jpg
-portrait_caption: >-
-  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+#portrait_caption: >-
+#  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
 education:
 - name: Liceo Scientifico Statale Filippo Lussana
-#  logo: https://www.liceolussana.edu.it/wp-content/uploads/2025/01/LogoLussana.png
+  logo: https://www.liceolussana.edu.it/wp-content/uploads/2024/10/home-2-730x485.jpg
   position: >- 
     Liceo scientifico tradizionale con seconda lingua tedesca.
   date: Sep. 2021 - Present
 
-# experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+experience:
+- name: Probabile Olimpico 2023/2024 e 2024/2025
+  logo: https://www.olimpiadi-informatica.it/processed_images/anpc.610c6c140bd07ded.png
+  position: PO
+  date: Sep. 2023 - Jul. 2025
+
+#Ho partecipato al campo di matematica internazionale Maths Beyond Limits Poland 2024. Ho partecipato allo stage di fisica per liceali della scuola normale superiore di pisa 2026.
 
 awards:
 # - name: Award Name 2
