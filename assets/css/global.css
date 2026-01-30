@@ -3,6 +3,11 @@ body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     padding-top: 5.0rem;
+    background-color: #ffffff; 
+}
+#navbar-year .nav-link.active {
+    background-color: transparent;   /* niente pill blu */
+    color: #000;                      /* resta nero */
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -43,7 +48,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .navbar {
-    opacity: 0.95;
+    opacity: 1;
 }
 
 .inline-badge {
