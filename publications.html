@@ -22,9 +22,9 @@ body_attr: >-
     </div>
 
     <div class="col-2 d-none d-lg-block">
-        <div id="navbar-year" class="nav nav-pills flex-column sticky-top" style="top: 80px">
+        <div id="navbar-year" class="nav nav-pills flex-column sticky-top navbar-light" style="top: 80px">
             {% for year in pubs_by_year %}
-            <a class="nav-link d-block" href="#year-{{ year.name }}">{{ year.name }}</a>
+            <a class="nav-link d-block text-dark" href="#year-{{ year.name }}">{{ year.name }}</a>
             {% endfor %}
         </div>
     </div>
