@@ -21,7 +21,6 @@ navbar_title: Home
         {% endif %}
 
         {% if site.data.display.homepage.show_news %}
-        <p> ciao</p>
         {% assign count_news = site.news | size %}
         {% if count_news > 0 %}
         {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
