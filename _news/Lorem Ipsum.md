@@ -1,4 +1,4 @@
 ---
-title: Lorem ipsum sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-date: 2022-01-12 00:01:00 +0800
+title: Ammesso allo stage di fisica SNS a Pisa
+date: 2025-12-30 00:00:00 +0800
 ---
