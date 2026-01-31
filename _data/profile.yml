@@ -30,15 +30,15 @@ education:
 - name: Liceo Scientifico Statale Filippo Lussana
   logo: https://www.liceolussana.edu.it/wp-content/uploads/2025/01/LogoLussana.png
   position: >- 
-    Liceo scientifico tradizionale con seconda lingua tedesca.
+    Liceo scientifico tradizionale con tedesco.
   date: Sep. 2021 - Present
 
 experience:
-- name: PO olimpiadi informatica 2023/2024 e 2024/2025
+- name: PO olimpiadi informatica
   logo: https://www.olimpiadi-informatica.it/processed_images/anpc.610c6c140bd07ded.png
-  date: Sep. 2023 - Jul. 2025
+  date: Sep. 2023 - Sep. 2025
 
-- name: Maths Beyond Limits Poland 2024
+- name: Maths Beyond Limits Poland
   logo: assets/images/etc/logo_poland.jpg
   date: Sep. 2024
 
@@ -51,17 +51,17 @@ awards:
    date: Jan. 2026
  - name: Quarantaduesimo posto OII
    date: Sep. 2025
- - name: Trentaquattresimo posto GAS 2025
+ - name: Trentaquattresimo posto GAS
    date: May. 2025
  - name: Decimo posto OIS 2025
    date: Mar. 2025
  - name: Sedicesimo posto OII
    date: Sep. 2024
- - name: Tedicesimo posto GAS 2024
+ - name: Tredicesimo posto GAS
    date: May. 2024
- - name: Ventunesimo posto OIS 2024
+ - name: Ventunesimo posto OIS
    date: Mar. 2024
  - name: Sedicesimo posto OII
    date: Sep. 2023
- - name: Ventiduesimo posto OIS 2023
+ - name: Ventiduesimo posto OIS
    date: Mar. 2023
