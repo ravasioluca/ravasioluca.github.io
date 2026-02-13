@@ -1,17 +1,8 @@
-<nav class="navbar navbar-expand-sm fixed-top mb-5 shadow-sm">
-    <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %} d-flex align-items-center">
-        
+<nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top mb-5 shadow-sm">
+    <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
         <a class="navbar-brand"><strong>{{site.data.profile.navbar_name}}</strong></a>
-        
-        <div class="custom-control custom-switch ml-auto mr-3">
-            <input type="checkbox" class="custom-control-input" id="theme-toggle">
-            <label class="custom-control-label" for="theme-toggle" style="cursor: pointer;">
-                <i class="fas fa-moon"></i>
-            </label>
-        </div>
-
-        <button class="navbar-toggler" style="font-size: 1em; padding: 0.5em;" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-            <i class="fas fa-bars"></i>
+        <button class="navbar-toggler" style="font-size: 1em; padding: 0.5em;" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-map"></i> Menu
         </button>
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -21,7 +12,40 @@
                     <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.name }}</a>
                 </li>
                 {% endfor %}
-            </ul>
+                
+                <li class="nav-item d-flex align-items-center ml-sm-3">
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="theme-toggle">
+                        <label class="custom-control-label" for="theme-toggle" style="cursor: pointer;">
+                            <i class="fas fa-moon"></i>
+                        </label>
+                    </div>
+                </li>
+                </ul>
         </div>
     </div>
 </nav>
+
+<script>
+(function() {
+    const applyTheme = (theme) => {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+    };
+
+    // Caricamento immediato del tema salvato
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    applyTheme(savedTheme);
+
+    // Inizializzazione dello switch al caricamento del DOM
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggle = document.getElementById('theme-toggle');
+        if (toggle) {
+            toggle.checked = (savedTheme === 'dark');
+            toggle.addEventListener('change', function() {
+                applyTheme(this.checked ? 'dark' : 'light');
+            });
+        }
+    });
+})();
+</script>
