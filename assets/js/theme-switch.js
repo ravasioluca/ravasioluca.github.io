@@ -1,32 +1,21 @@
-(() => {
-  'use strict'
+const toggle = document.getElementById('theme-toggle');
+const body = document.body;
 
-  const getStoredTheme = () => localStorage.getItem('theme')
-  const setStoredTheme = theme => localStorage.setItem('theme', theme)
+// Controlla se c'è una preferenza salvata
+if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+    if(toggle) toggle.checked = true;
+}
 
-  const getPreferredTheme = () => {
-    const storedTheme = getStoredTheme()
-    if (storedTheme) return storedTheme
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-  }
-
-  const setTheme = theme => {
-    document.documentElement.setAttribute('data-bs-theme', theme)
-  }
-
-  setTheme(getPreferredTheme())
-
-  window.addEventListener('DOMContentLoaded', () => {
-    const toggle = document.getElementById('theme-toggle');
-    if (!toggle) return;
-
-    // Imposta lo stato iniziale della checkbox/switch
-    toggle.checked = getPreferredTheme() === 'dark';
-
+// Gestione del click
+if(toggle) {
     toggle.addEventListener('change', () => {
-      const theme = toggle.checked ? 'dark' : 'light'
-      setStoredTheme(theme)
-      setTheme(theme)
-    })
-  })
-})()
+        if (toggle.checked) {
+            body.classList.add('dark-mode');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            body.classList.remove('dark-mode');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+}
