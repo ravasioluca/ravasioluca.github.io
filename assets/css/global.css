@@ -115,3 +115,38 @@ img.lazy, div.lazy {
     background-size: 50px 50px;
     min-height: 80px;
 }
+
+/* --- Fix per i Widget (Versione Soft) --- */
+
+html[data-theme='dark'] .card,
+html[data-theme='dark'] .list-group-item,
+html[data-theme='dark'] .modal-content,
+html[data-theme='dark'] .bg-white,
+html[data-theme='dark'] .bg-light {
+    background-color: var(--card-bg) !important;
+    color: var(--text-color) !important;
+    /* Non tocchiamo il border-color qui per non rompere il raggio degli angoli */
+}
+
+/* Gestione specifica dei bordi senza rompere i border-radius */
+html[data-theme='dark'] .card,
+html[data-theme='dark'] .border,
+html[data-theme='dark'] .border-top,
+html[data-theme='dark'] .border-bottom,
+html[data-theme='dark'] .list-group-item {
+    border-color: var(--border-color) !important;
+}
+
+/* Rimuoviamo il background forzato dalle parti interne */
+html[data-theme='dark'] .card-body,
+html[data-theme='dark'] .card-header,
+html[data-theme='dark'] .card-footer {
+    background-color: transparent !important;
+    color: inherit !important;
+}
+
+/* Icone: meglio usare l'ereditarietà invece di forzare */
+html[data-theme='dark'] i,
+html[data-theme='dark'] .ai {
+    color: inherit; 
+}
