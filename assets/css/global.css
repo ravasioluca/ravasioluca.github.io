@@ -150,3 +150,20 @@ html[data-theme='dark'] i,
 html[data-theme='dark'] .ai {
     color: inherit; 
 }
+
+/* Colore autori in Dark Mode */
+html[data-theme='dark'] .small,
+html[data-theme='dark'] .small a,
+html[data-theme='dark'] .small span {
+    color: var(--text-color) !important;
+}
+
+/* Se il widget usa link per gli autori, rendiamoli blu chiaro per leggibilità */
+html[data-theme='dark'] .small a {
+    color: var(--link-color) !important;
+    text-decoration: none;
+}
+
+html[data-theme='dark'] .small a:hover {
+    text-decoration: underline;
+}
