@@ -125,10 +125,8 @@ html[data-theme='dark'] .bg-white,
 html[data-theme='dark'] .bg-light {
     background-color: var(--card-bg) !important;
     color: var(--text-color) !important;
-    /* Non tocchiamo il border-color qui per non rompere il raggio degli angoli */
 }
 
-/* Gestione specifica dei bordi senza rompere i border-radius */
 html[data-theme='dark'] .card,
 html[data-theme='dark'] .border,
 html[data-theme='dark'] .border-top,
@@ -137,7 +135,6 @@ html[data-theme='dark'] .list-group-item {
     border-color: var(--border-color) !important;
 }
 
-/* Rimuoviamo il background forzato dalle parti interne */
 html[data-theme='dark'] .card-body,
 html[data-theme='dark'] .card-header,
 html[data-theme='dark'] .card-footer {
@@ -145,7 +142,6 @@ html[data-theme='dark'] .card-footer {
     color: inherit !important;
 }
 
-/* Icone: meglio usare l'ereditarietà invece di forzare */
 html[data-theme='dark'] i,
 html[data-theme='dark'] .ai {
     color: inherit; 
@@ -168,45 +164,10 @@ html[data-theme='dark'] .small a:hover {
     text-decoration: underline;
 }
 
-/* Rendi visibile l'hamburger menu in Dark Mode */
-html[data-theme='dark'] .navbar-toggler {
-    border-color: rgba(255,255,255,0.1) !important;
-}
-
-html[data-theme='dark'] .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3參path stroke='rgba(232, 230, 227, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3參/svg%3E") !important;
-}
-
-/* FORZATURA TOTALE PER LE CARD DELLE PUBBLICAZIONI */
-html[data-theme='dark'] .card,
-html[data-theme='dark'] .bg-white,
-html[data-theme='dark'] .list-group-item,
-html[data-theme='dark'] .publication-card, /* Classe specifica di molti template */
-html[data-theme='dark'] div[class*="card"] { 
-    background-color: var(--card-bg) !important;
-    color: var(--text-color) !important;
-    border-color: var(--border-color) !important;
-}
-
 /* Fix per l'ombra: in Dark Mode l'ombra chiara sta male */
 html[data-theme='dark'] .shadow-sm {
     shadow: 0 .125rem .25rem rgba(0,0,0,.5) !important;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.5) !important;
-}
-
-/* Assicuriamoci che ogni paragrafo dentro le card sia chiaro */
-html[data-theme='dark'] .card p,
-html[data-theme='dark'] .card span,
-html[data-theme='dark'] .card a:not(.btn) {
-    color: var(--text-color) !important;
-}
-
-/* Fix per i bottoni delle pubblicazioni (PDF, BibTex, etc) */
-html[data-theme='dark'] .btn-outline-dark,
-html[data-theme='dark'] .btn-light {
-    background-color: transparent !important;
-    color: var(--link-color) !important;
-    border-color: var(--link-color) !important;
 }
 
 /* 1. Cambia il colore del testo "Menu" accanto all'icona */
