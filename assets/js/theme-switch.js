@@ -1,21 +1,21 @@
-const toggle = document.getElementById('theme-toggle');
-const body = document.body;
+(function() {
+    const applyTheme = (theme) => {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+    };
 
-// Controlla se c'è una preferenza salvata
-if (localStorage.getItem('theme') === 'dark') {
-    body.classList.add('dark-mode');
-    if(toggle) toggle.checked = true;
-}
+    // 1. Applica subito il tema salvato (evita il flash bianco)
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    applyTheme(savedTheme);
 
-// Gestione del click
-if(toggle) {
-    toggle.addEventListener('change', () => {
-        if (toggle.checked) {
-            body.classList.add('dark-mode');
-            localStorage.setItem('theme', 'dark');
-        } else {
-            body.classList.remove('dark-mode');
-            localStorage.setItem('theme', 'light');
+    // 2. Attendi che il DOM sia pronto per collegare lo switch
+    document.addEventListener('DOMContentLoaded', () => {
+        const toggle = document.getElementById('theme-toggle');
+        if (toggle) {
+            toggle.checked = (savedTheme === 'dark');
+            toggle.addEventListener('change', () => {
+                applyTheme(toggle.checked ? 'dark' : 'light');
+            });
         }
     });
-}
+})();
