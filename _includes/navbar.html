@@ -1,8 +1,11 @@
 <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top mb-5 shadow-sm">
     <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
-        <a class="navbar-brand"><strong>{{site.data.profile.navbar_name}}</strong></a>
+        <a class="navbar-brand" href="{{ '/' | relative_url }}" style="cursor: pointer;">
+            <strong>{{site.data.profile.navbar_name}}</strong>
+        </a>
+        
         <button class="navbar-toggler" style="font-size: 1em; padding: 0.5em;" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-map"></i> Menu
+            <span class="navbar-toggler-icon"></span> Menu
         </button>
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -21,7 +24,7 @@
                         </label>
                     </div>
                 </li>
-                </ul>
+            </ul>
         </div>
     </div>
 </nav>
@@ -33,11 +36,9 @@
         localStorage.setItem('theme', theme);
     };
 
-    // Caricamento immediato del tema salvato
     const savedTheme = localStorage.getItem('theme') || 'light';
     applyTheme(savedTheme);
 
-    // Inizializzazione dello switch al caricamento del DOM
     document.addEventListener('DOMContentLoaded', function() {
         const toggle = document.getElementById('theme-toggle');
         if (toggle) {
