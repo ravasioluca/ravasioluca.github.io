@@ -21,7 +21,7 @@ html[data-theme='dark'] {
     --nav-bg: #1c1c1c;
     --border-color: #333333;
     --link-color: #8ab4f8;
-    --shadow-color: rgba(0,0,0,.2);
+    --shadow-color: rgba(0,0,0,.03);
     --toggler-icon: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(232, 230, 227, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
@@ -73,10 +73,6 @@ body {
 .card-header, .card-footer, .card-body {
     background-color: transparent !important;
     color: inherit !important;
-}
-
-.shadow-sm {
-    box-shadow: 0 .125rem .25rem var(--shadow-color) !important;
 }
 
 /* --- 5. TIPOGRAFIA --- */
