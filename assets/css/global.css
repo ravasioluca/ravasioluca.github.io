@@ -202,3 +202,8 @@ html[data-theme='dark'] .navbar-light .navbar-toggler-icon {
     display: inline-block;
     vertical-align: middle;
 }
+
+.bubble-visual-hash {
+    background-color: #ffffff !important; /* Forza lo sfondo bianco */
+    border-radius: 0.8rem;               /* Opzionale: mantiene la coerenza con le tue card */
+}
