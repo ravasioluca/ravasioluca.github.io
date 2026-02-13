@@ -207,3 +207,29 @@ html[data-theme='dark'] .navbar-light .navbar-toggler-icon {
     background-color: #ffffff !important; /* Forza lo sfondo bianco */
     border-radius: 0.8rem;               /* Opzionale: mantiene la coerenza con le tue card */
 }
+
+/* 1. Colore dello sfondo quando lo switch è attivo (ON) */
+.custom-switch .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #495057 !important; /* Grigio scuro invece di blu */
+    border-color: #495057 !important;
+}
+
+/* 2. Colore dello sfondo in Dark Mode quando attivo */
+html[data-theme='dark'] .custom-switch .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: var(--link-color) !important; /* Usa il tuo azzurro dark */
+    border-color: var(--link-color) !important;
+}
+
+/* 3. Colore dello switch quando viene cliccato (focus) per togliere l'alone blu */
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1) !important;
+}
+
+html[data-theme='dark'] .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.1) !important;
+}
+
+/* 4. Opzionale: Cambia il colore dell'icona della luna quando attiva */
+.custom-control-input:checked ~ .custom-control-label i {
+    color: #f1c40f; /* Un tocco di giallo oro quando la notte è attiva */
+}
