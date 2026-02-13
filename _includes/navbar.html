@@ -1,8 +1,17 @@
-<nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top mb-5 shadow-sm">
-    <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
+<nav class="navbar navbar-expand-sm fixed-top mb-5 shadow-sm">
+    <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %} d-flex align-items-center">
+        
         <a class="navbar-brand"><strong>{{site.data.profile.navbar_name}}</strong></a>
-        <button class="navbar-toggler" style="font-size: 1em; padding: 0.5em;" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-map"></i> Menu
+        
+        <div class="custom-control custom-switch ml-auto mr-3">
+            <input type="checkbox" class="custom-control-input" id="theme-toggle">
+            <label class="custom-control-label" for="theme-toggle" style="cursor: pointer;">
+                <i class="fas fa-moon"></i>
+            </label>
+        </div>
+
+        <button class="navbar-toggler" style="font-size: 1em; padding: 0.5em;" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <i class="fas fa-bars"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -14,12 +23,5 @@
                 {% endfor %}
             </ul>
         </div>
-    </div>
-
-    <div class="custom-control custom-switch ms-auto me-3">
-        <input type="checkbox" class="custom-control-input" id="theme-toggle">
-        <label class="custom-control-label" for="theme-toggle" style="cursor: pointer;">
-        <i class="fas fa-moon"></i>
-        </label>
     </div>
 </nav>
