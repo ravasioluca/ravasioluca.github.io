@@ -122,3 +122,14 @@ img.lazy, div.lazy {
         margin-top: 0.5rem;
     }
 }
+
+.img-logo-bg {
+    width: 22px;             /* Leggermente più grande dell'immagine */
+    height: 22px;
+    padding: 2px;            /* Crea lo spazio bianco intorno */
+    background-color: #ffffff !important; /* Sempre bianco, anche in Dark Mode */
+    border-radius: 4px;      /* Arrotonda gli angoli del quadratino */
+    object-fit: contain;     /* Assicura che il logo non si deformi */
+    display: inline-block;
+    vertical-align: middle;
+}
