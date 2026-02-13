@@ -1,18 +1,30 @@
-<nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top mb-5 shadow-sm">
-    <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
-        <a class="navbar-brand"><strong>{{site.data.profile.navbar_name}}</strong></a>
-        <button class="navbar-toggler" style="font-size: 1em; padding: 0.5em;" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-map"></i> Menu
+<nav class="navbar navbar-expand-sm sticky-top mb-5 shadow-sm border-bottom">
+    <div class="container-lg">
+        <a class="navbar-brand" href="{{ '/' | relative_url }}">
+            <strong>{{site.data.profile.navbar_name}}</strong>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ms-auto">
                 {% for item in site.data.navigation.pages %}
-                <li class="nav-item {% if item.name == page.navbar_title %}active{% endif %}">
-                    <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.name }}</a>
+                <li class="nav-item">
+                    <a class="nav-link {% if item.name == page.navbar_title %}active{% endif %}" href="{{ item.url | relative_url }}">
+                        {{ item.name }}
+                    </a>
                 </li>
                 {% endfor %}
             </ul>
+            
+            <div class="form-check form-switch ms-sm-3">
+                <input class="form-check-input" type="checkbox" id="theme-toggle">
+                <label class="form-check-label" for="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </label>
+            </div>
         </div>
     </div>
 </nav>
