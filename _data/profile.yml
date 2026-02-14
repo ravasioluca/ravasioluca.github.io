@@ -37,15 +37,15 @@ education:
 
 experience:
 - name: PO olimpiadi informatica
-  logo: ravasioluca/ravasioluca.github.io/assets/images/badges/logo_anpc.png
+  logo: /assets/images/badges/logo_anpc.png
   date: Sep. 2023 - Sep. 2025
 
 - name: Maths Beyond Limits Poland
-  logo: ravasioluca/ravasioluca.github.io/assets/images/badges/logo_poland.jpg
+  logo: /assets/images/badges/logo_poland.jpg
   date: Sep. 2024
 
 - name: Stage di fisica a Pisa SNS
-  logo: ravasioluca/ravasioluca.github.io/assets/images/badges/logo_sns.png
+  logo: /assets/images/badges/logo_sns.png
   date: Feb. 2026
 
 awards:
