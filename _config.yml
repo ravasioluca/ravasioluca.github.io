@@ -40,3 +40,6 @@ collections:
   - news
   - showcase
   - awards 
+
+exclude:
+  - assets/files/PDFS
