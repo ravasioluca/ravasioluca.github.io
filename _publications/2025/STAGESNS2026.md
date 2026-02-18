@@ -14,5 +14,5 @@ abstract: >-
 authors:
   - Luca Ravasio
 links:
-  PDF: assets/files/PDFS/STAGESNS2026.pdf
+  PDF: https://ravasioluca.github.io/assets/files/PDFS/STAGESNS2026.pdf
 ---
