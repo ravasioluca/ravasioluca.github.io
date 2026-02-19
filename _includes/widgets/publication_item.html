@@ -1,5 +1,6 @@
 {% assign item = include.item %}
 <div class="d-none d-md-block">
+    <a href="{{ item.url }}" class="text-decoration-none text-body"></a>
     <div class="row no-gutters {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray">
         <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
             {%- if item.cover -%}
@@ -29,6 +30,7 @@
 </div>
 
 <div class="row no-gutters d-md-none {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray {% if include.first %}rounded-xl-top{% endif %} {% if include.last %}rounded-xl-bottom{% endif %} {% if item.cover %}lazy{% endif %}" data-src="{{ item.cover | relative_url }}">
+    <a href="{{ item.url }}" class="text-decoration-none text-body"></a>
     <div class="w-100 {% if include.first %}rounded-xl-top{% endif %} {% if include.last %}rounded-xl-bottom{% endif %}">
         <div class="d-flex align-items-start flex-column py-3 px-4">
             <div class="mb-auto"></div>
