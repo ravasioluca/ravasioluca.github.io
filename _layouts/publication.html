@@ -6,26 +6,6 @@
   <meta name="description" content="{{ page.abstract }}">
 </head>
 <body>
-  <article class="publication">
-    <h1>{{ page.title }}</h1>
 
-    {% if page.authors %}
-      <p><strong>Autori:</strong> {{ page.authors | join: ", " }}</p>
-    {% endif %}
-
-    {% if page.abstract %}
-      <p>{{ page.abstract }}</p>
-    {% endif %}
-
-    {% if page.links.PDF %}
-      <p><a href="{{ page.links.PDF }}">Scarica PDF</a></p>
-    {% endif %}
-
-    {% for key, url in page.links %}
-      {% unless key == "PDF" %}
-        <p><a href="{{ url }}">{{ key }}</a></p>
-      {% endunless %}
-    {% endfor %}
-  </article>
 </body>
 </html>
