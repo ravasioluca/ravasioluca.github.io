@@ -1,5 +1,5 @@
 ---
-# Puoi aggiungere front matter vuoto se vuoi
+# layout per pubblicazioni
 ---
 <!DOCTYPE html>
 <html lang="it">
@@ -10,7 +10,7 @@
     <meta name="description" content="{{ page.abstract }}">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ '/assets/css/global.css' | relative_url }}">
 </head>
@@ -19,33 +19,8 @@
 
     <div class="container-lg my-5">
         <div class="card shadow-sm p-4 rounded">
-            <h1 class="mb-3">{{ page.title }}</h1>
-
-            {% if page.authors %}
-                <p><strong>Autori:</strong> {{ page.authors | join: ", " }}</p>
-            {% endif %}
-
-            {% if page.date %}
-                <p><strong>Anno:</strong> {{ page.date | date: "%Y" }}</p>
-            {% endif %}
-
-            {% if page.abstract %}
-                <div class="mb-3">
-                    <h5>Abstract</h5>
-                    <p>{{ page.abstract }}</p>
-                </div>
-            {% endif %}
-
-            {% if page.links %}
-                <div class="mb-3">
-                    <h5>Link</h5>
-                    <ul>
-                        {% for key, url in page.links %}
-                            <li><a href="{{ url }}">{{ key }}</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            {% endif %}
+            <!-- Qui viene inserito il contenuto del Markdown -->
+            {{ content }}
         </div>
     </div>
 
