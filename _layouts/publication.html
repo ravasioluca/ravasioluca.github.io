@@ -1,23 +1,59 @@
+---
+# Puoi aggiungere front matter vuoto se vuoi
+---
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
-  <meta name="description" content="{{ page.abstract }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ page.title }} - {{ site.data.profile.navbar_name }}</title>
+    <meta name="description" content="{{ page.abstract }}">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ '/assets/css/global.css' | relative_url }}">
 </head>
-<body>
- <h1>{{ page.title }}</h1>
+<body class="bg-light" {{ page.body_attr }}>
+    {% include navbar.html %}
 
-  {% if page.authors %}
-    <p>Autori: {{ page.authors | join: ", " }}</p>
-  {% endif %}
+    <div class="container-lg my-5">
+        <div class="card shadow-sm p-4 rounded">
+            <h1 class="mb-3">{{ page.title }}</h1>
 
-  {% if page.abstract %}
-    <p>{{ page.abstract }}</p>
-  {% endif %}
+            {% if page.authors %}
+                <p><strong>Autori:</strong> {{ page.authors | join: ", " }}</p>
+            {% endif %}
 
-  {% if page.links.PDF %}
-    <p><a href="{{ page.links.PDF }}">Scarica il PDF</a></p>
-  {% endif %}
+            {% if page.date %}
+                <p><strong>Anno:</strong> {{ page.date | date: "%Y" }}</p>
+            {% endif %}
+
+            {% if page.abstract %}
+                <div class="mb-3">
+                    <h5>Abstract</h5>
+                    <p>{{ page.abstract }}</p>
+                </div>
+            {% endif %}
+
+            {% if page.links %}
+                <div class="mb-3">
+                    <h5>Link</h5>
+                    <ul>
+                        {% for key, url in page.links %}
+                            <li><a href="{{ url }}">{{ key }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    {% include footer.html %}
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 </body>
 </html>
