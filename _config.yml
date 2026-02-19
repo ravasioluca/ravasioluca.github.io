@@ -21,9 +21,8 @@ plugins:
   - jekyll-email-protect
   - jekyll-sitemap
 
-sitemap:
-  exclude:
-    - "*.pdf"
+exclude:
+  - assets/files/PDFS
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
