@@ -38,7 +38,7 @@ timezone: Europe/Rome
 collections:
   publications:
     output: true
-    permalink: /publications/:path/:title/
+    permalink: /publications/:path
   news:
     output: true
   awards:
