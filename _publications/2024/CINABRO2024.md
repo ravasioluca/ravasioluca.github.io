@@ -2,6 +2,7 @@
 title: "Relazione sul Cinabro"
 date: 2024-11-01
 selected: false
+layout: publication
 # pub:            "International Conference on Machine Learning (ICML)"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'

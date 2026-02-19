@@ -2,6 +2,7 @@
 title: "Stage SNS Fisica 2026"
 date: 2025-12-05
 selected: true
+layout: publication
 # pub:            "International Conference on Machine Learning (ICML)"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'

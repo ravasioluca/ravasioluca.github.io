@@ -2,6 +2,7 @@
 title: "PROMYS italia 2025"
 date: 2025-03-20
 selected: true
+layout: publication
 # pub:            "International Conference on Machine Learning (ICML)"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'
