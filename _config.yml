@@ -36,8 +36,6 @@ plugins:
 timezone: Europe/Rome
 
 collections:
-  - publications:
-      output: true
-      permalink: /publications/:path/:title/
+  - publications
   - news
   - awards 
