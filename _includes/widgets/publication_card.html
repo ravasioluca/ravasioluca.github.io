@@ -2,7 +2,6 @@
 <div class="card border-0 shadow-sm my-3 p-3 rounded-xl">
     <h6 class="border-bottom border-gray p-3 mb-0">
         {% if include.title %}{{ include.title }}{% else %}<i class="fas fa-star"></i> Selezione di pubblicazioni recenti{% endif %} 
-        <a href="{{ 'publications' | relative_url }}">(vedi tutto <i class="fas fa-angle-double-right"></i>)</a>
     </h6>
     {% for item in publications limit:include.limit %}
         {% include widgets/publication_item.html item=item first=false last=false %}    
