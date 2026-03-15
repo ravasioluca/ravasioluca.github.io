@@ -37,32 +37,8 @@
         <p><a href="{{ page.links.repo }}">Github repo</a></p>
         {% endif %}
   
-        {% if page.links.PDF %}
-        <!-- Canvas dove verrà renderizzato il PDF -->
-        <canvas id="pdf-render" style="width:100%; border:1px solid #ccc;"></canvas>
-        
-        <!-- Include PDF.js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.239/pdf.min.js"></script>
-        
-        <script>
-          // URL del PDF dal tuo template
-          const url = "{{ page.links.PDF }}";
-        
-          // Carica il PDF
-          pdfjsLib.getDocument(url).promise.then(pdf => {
-            // Mostra la prima pagina
-            pdf.getPage(1).then(page => {
-              const viewport = page.getViewport({ scale: 1.5 });
-              const canvas = document.getElementById('pdf-render');
-              const context = canvas.getContext('2d');
-        
-              canvas.height = viewport.height;
-              canvas.width = viewport.width;
-        
-              page.render({ canvasContext: context, viewport: viewport });
-            });
-          });
-        </script>
+      {% if page.links.PDF %}
+        <embed src="{{ page.links.PDF }}" type="application/pdf" width="100%" height="600px" />
       {% endif %}
   
       </div>
