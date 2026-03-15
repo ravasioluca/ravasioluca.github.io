@@ -38,33 +38,13 @@
       {% endif %}
 
       {% if page.links.PDF %}
-        <div style="width:100%; max-width:800px; margin:auto; border:none;">
-          <canvas id="pdf-render" style="display:block; width:100%; border:none;"></canvas>
-        </div>
-        
-        <!-- PDF.js -->
-        <script src="https://unpkg.com/pdfjs-dist@3.11.239/build/pdf.min.js"></script>
+        <div id="pdf-viewer" style="width:100%; max-width:800px; height:600px; margin:auto;"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.8/pdfobject.min.js"></script>
         <script>
-          // Worker PDF.js
-          pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://unpkg.com/pdfjs-dist@3.11.239/build/pdf.worker.min.js';
-        
-          const url = "{{ page.links.PDF }}"; // Link al PDF
-        
-          pdfjsLib.getDocument(url).promise.then(pdf => {
-            return pdf.getPage(1);
-          }).then(page => {
-            const scale = 1.5;
-            const viewport = page.getViewport({ scale: scale });
-        
-            const canvas = document.getElementById('pdf-render');
-            const context = canvas.getContext('2d');
-            canvas.width = viewport.width;
-            canvas.height = viewport.height;
-        
-            return page.render({ canvasContext: context, viewport: viewport }).promise;
-          }).then(() => {
-            console.log("PDF renderizzato correttamente!");
-          }).catch(err => console.error("Errore PDF.js:", err));
+          PDFObject.embed("{{ page.links.PDF }}", "#pdf-viewer", {
+            height: "600px",
+            width: "100%"
+          });
         </script>
       {% endif %}
   
