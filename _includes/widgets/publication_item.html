@@ -15,6 +15,18 @@
             <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
             <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
             <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p>
+
+            <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
+                {% for link in item.links %}
+                    <p> {{ link[1]['target'] }} </p>
+                    {% if link[1].url %}
+                    <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">[{{ link[0] }}]</a>
+                    {% else %}
+                    <a target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>
+                    {% endif %}
+                {% endfor %}
+            </p>
+
             <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
                 {% for link in item.links %}
                     {% if link[1].url %}
@@ -25,7 +37,6 @@
                 {% endfor %}
             </p>
 
-            {{items.links}}
 
             <!-- Stretched link per rendere tutta la card cliccabile -->
             <a href="{{ item.url }}" class="stretched-link"></a>
