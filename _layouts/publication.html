@@ -35,17 +35,10 @@
 
       {% if page.links.repo %}
         <p><a href="{{ page.links.repo }}">Github repo</a></p>
-      {% endif %}
-
+        {% endif %}
+  
       {% if page.links.PDF %}
-        <div id="pdf-viewer" style="width:100%; max-width:800px; height:600px; margin:auto;"></div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.8/pdfobject.min.js"></script>
-        <script>
-          PDFObject.embed("{{ page.links.PDF }}", "#pdf-viewer", {
-            height: "600px",
-            width: "100%"
-          });
-        </script>
+        <embed src="{{ page.links.PDF }}" type="application/pdf" width="100%"/>
       {% endif %}
   
       </div>
