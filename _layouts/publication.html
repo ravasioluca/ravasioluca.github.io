@@ -36,37 +36,11 @@
       {% if page.links.repo %}
         <p><a href="{{ page.links.repo }}">Github repo</a></p>
         {% endif %}
-
+  
       {% if page.links.PDF %}
-        <canvas id="pdf-render" style="width:100%; max-width:800px; display:block; margin:auto; border:none;"></canvas>
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.239/pdf.min.js"></script>
-        <script>
-          const url = "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"; 
-      
-          // Imposta il worker PDF.js
-          pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.239/pdf.worker.min.js';
-      
-          // Carica il PDF
-          pdfjsLib.getDocument(url).promise.then(pdf => {
-            // Mostra solo la prima pagina
-            pdf.getPage(1).then(page => {
-              const scale = 1.5; // puoi regolare lo zoom
-              const viewport = page.getViewport({ scale: scale });
-      
-              const canvas = document.getElementById('pdf-render');
-              const context = canvas.getContext('2d');
-      
-              canvas.height = viewport.height;
-              canvas.width = viewport.width;
-      
-              page.render({ canvasContext: context, viewport: viewport })
-                  .promise.then(() => console.log('PDF renderizzato correttamente'));
-            });
-          }).catch(err => {
-            console.error("Errore nel caricamento del PDF:", err);
-          });
-        </script>
+        <div class="pdf-container" style="width:100%; height:600px; overflow:hidden;">
+        <embed src="{{ page.links.PDF }}" type="application/pdf" width="100%" height="100%" style="border:none;" />
+        </div>
       {% endif %}
   
       </div>
