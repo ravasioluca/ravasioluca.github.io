@@ -12,6 +12,8 @@ layout: publication
 # semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
 abstract: >-
   Il repo con le mie soluzioni ai problemi di training.olinfo.it
+  Usare con saggezza: copiare e incollare codice non è un esercizio utile per le OII!
+  Alcune folders sono vuote o hanno codice che non fa cento.
 # cover:          /assets/images/covers/cover3.jpg
 authors:
   - Luca Ravasio
