@@ -3,8 +3,9 @@
         <div class="card border-0 shadow-sm">
             <div class="card-body p-4">
                 <div class="row" data-masonry='{"percentPosition": true }'>
-                    {% if site.data.profile.experience %}
+                    
                     <div class="col-lg-6">
+                        {% if site.data.profile.experience %}
                         <div class="mx-2 my-1">
                             <h6>Esperienze</h6>
                             <ul class="list-unstyled mb-1">
@@ -23,11 +24,9 @@
                                 {% endfor %}
                             </ul>
                         </div>
-                    </div>
-                    {% endif %}
+                        {% endif %}
 
-                    {% if site.data.profile.education %}
-                    <div class="col-lg-6">
+                        {% if site.data.profile.education %}
                         <div class="mx-2 my-1">
                             <h6>Formazione</h6>
                             <ul class="list-unstyled mb-1">
@@ -46,8 +45,8 @@
                                 {% endfor %}
                             </ul>
                         </div>
-                    </div>
-                    {% endif %}
+                        {% endif %}
+                    </div>            
 
                     {% if site.data.profile.awards %}
                     <div class="col-lg-6">
