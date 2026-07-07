@@ -44,65 +44,6 @@
         
                 </div>
                 <hr />
-                <div class="row">
-                    <div class="col">
-                        <i class="fas fa-at"></i> <span class="email-text"> {{ site.data.profile.email | encode_email}} </span>
-
-
-                        {% if site.data.profile.gscholar %}
-                        {%- if site.data.profile.gscholar contains 'scholar.google' -%}
-                        {%- assign gscholar_url = site.data.profile.gscholar -%}
-                        {%- else -%}
-                        {%- assign gscholar_url = 'https://scholar.google.com/citations?user=' | append: site.data.profile.gscholar -%}
-                        {%- endif -%}
-                        <a class="pr-3 no-break" target="_blank" href="{{ gscholar_url }}">
-                            <i class="fab fa-google-scholar"></i> Google Scholar
-                        </a>
-                        {% endif %}
-                        
-                        {% if site.data.profile.github %}
-                        <a class="pr-3 no-break" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        {% endif %}
-
-                        {% if site.data.profile.wechat_qrcode %}
-                        <a class="pr-3 no-break" data-toggle="modal" data-target="#modal-wechat">
-                            <i class="fab fa-weixin"></i> WeChat
-                        </a>
-                        {% endif %}
-
-                        {% if site.data.profile.twitter %}
-                        <a class="pr-3 no-break" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}">
-                            <i class="fab fa-twitter"></i> Twitter
-                        </a>
-                        {% endif %}
-
-                        {% if site.data.profile.linkedin %}
-                        <a class="pr-3 no-break" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}">
-                            <i class="fab fa-linkedin"></i> LinkedIn
-                        </a>
-                        {% endif %}
-
-                        {% if site.data.profile.orcid %}
-                        <a class="pr-3 no-break" target="_blank" href="https://orcid.org/{{ site.data.profile.orcid }}">
-                            <i class="fab fa-orcid"></i> ORCID
-                        </a>
-                        {% endif %}
-
-                        {% if site.data.profile.500px %}
-                        <a class="pr-3 no-break" target="_blank" href="https://500px.com/p/{{ site.data.profile.500px }}">
-                            <i class="fa-brands fa-500px"></i>
-                        </a>
-                        {% endif %}
-
-                        {% if site.data.profile.instagram %}
-                        <a class="pr-3 no-break" target="_blank" href="https://www.instagram.com/{{ site.data.profile.instagram }}">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        {% endif %}
-                    </div>
-                </div>
             </div>
         </div>        
     </div>
