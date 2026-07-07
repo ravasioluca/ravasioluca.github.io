@@ -43,5 +43,3 @@ collections:
     output: true
   awards:
     output: true
-  curriculum:
-    output: true
