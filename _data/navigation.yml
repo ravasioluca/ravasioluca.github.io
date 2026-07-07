@@ -7,5 +7,7 @@ pages:
 #  url: /index_layout2
 - name: Pubblicazioni
   url: /publications
+- name: Curriculum
+  url: /curriculum
 #- name: Showcase
 #  url: /showcase
