@@ -49,7 +49,7 @@
                 <hr />
                 <div class="row">
                     <div class="col">
-                        <i class="fas fa-at"></i> <span class="email-text"> nome.cognome.1@gmail.com </span>
+                        <i class="fas fa-at"></i> <span class="email-text"> {{ site.data.profile.email | encode_email}} </span>
 
 
                         {% if site.data.profile.gscholar %}
