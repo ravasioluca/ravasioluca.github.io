@@ -45,6 +45,23 @@
          {{ page.content }}
       {% endif %}
 
+      {% if page.html-content %}
+        <div id="contenuto-dinamico">Caricamento in corso...</div>
+          <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            fetch('{{ page.html-content }}').then(response => {
+                if (!response.ok) throw new Error('Errore nel caricamento dell\'HTML');
+                return response.text();
+            }).then(html => {
+                // Inseriamo l'HTML nel div. 
+                // Ora questo HTML erediterà TUTTO il CSS della tua pagina!
+                document.getElementById('contenuto-dinamico').innerHTML = html;
+            }).catch(error => console.error('Errore:', error));
+          });
+          </script>
+        </div>
+      {% endif %}
+
   
       </div>
 
@@ -58,3 +75,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 </body>
 </html>
+
