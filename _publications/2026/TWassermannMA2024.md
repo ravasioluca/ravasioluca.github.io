@@ -10,7 +10,7 @@ layout: publication
 # pub_date:       "2024"
 # semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
 abstract: "Soluzioni prova di ammissione Matematica A Toppo Wassermann Udine 2024"
-content: <iframe src="https://ravasioluca.github.io/assets/files/html/TWassermannMA2024.html" width="100%" height="500px" title="Embedded Content"> </iframe>
+content: <iframe src="https://ravasioluca.github.io/assets/files/html/TWassermannMA2024.html" width="100%" height="500px" title="Embedded Content"> . </iframe>
 # cover:          /assets/images/covers/cover3.jpg
 authors:
   - Luca Ravasio
