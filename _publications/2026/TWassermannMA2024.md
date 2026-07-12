@@ -9,7 +9,7 @@ layout: publication
 # pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
 # pub_date:       "2024"
 # semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
-abstract: <iframe src="https://ravasioluca.github.io/assets/files/PDFS/TWassermannMA2024.html" width="100%" height="500px" title="Embedded Content"> <p>Your browser does not support iframes.</p> </iframe>
+abstract: <iframe src="https://ravasioluca.github.io/assets/files/html/TWassermannMA2024.html" width="100%" height="500px" title="Embedded Content"> <p>Your browser does not support iframes.</p> </iframe>
 # cover:          /assets/images/covers/cover3.jpg
 authors:
   - Luca Ravasio
