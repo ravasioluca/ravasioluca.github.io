@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Résumé</title>
+    <meta name="description" content="Résumé Luca Ravasio">
+    <meta name="authors" content="Luca Ravasio">
+    <style>
+      /* Alignment */
+      mtable.right-align mtd,
+      mtable mtd.right-align,
+      mtable.left-align mtd.right-align,
+      mtable.aligned mtd:nth-child(odd) {
+        justify-items: end;
+        text-align: right;
+      }
+      mtable.cases mtd,
+      mtable.left-align mtd,
+      mtable mtd.left-align,
+      mtable.aligned mtd:nth-child(even),
+      math:is(:not([display])) > mtable.multiline-equation mtd {
+        justify-items: start;
+        text-align: left;
+      }
+      mtable.cases mtd,
+      mtable.aligned mtd,
+      mtable mtd.flushed,
+      mtable mtd.left-flush {
+        padding-left: 0;
+      }
+      mtable.cases mtd,
+      mtable.aligned mtd,
+      mtable mtd.flushed,
+      mtable mtd.right-flush {
+        padding-right: 0;
+      }
+      
+      /* Tables */
+      mtable {
+        math-style: inherit;
+      }
+      mtd {
+        math-depth: auto-add;
+        math-style: compact;
+        math-shift: compact;
+      }
+      
+      /* Equations */
+      mtable.multiline-equation mtd {
+        math-depth: inherit;
+        math-style: inherit;
+        math-shift: inherit;
+        padding: 0;
+      }
+      math > mtable.multiline-equation mtr:not(:last-child) mtd {
+        padding-bottom: 0.5em;
+      }
+      
+      /* Fractions */
+      mfrac {
+        padding-inline: 0;
+        margin-inline: 0.1em;
+      }
+      
+      /* Accents */
+      mover[accent="true" i] > :first-child {
+        font-feature-settings: "dtls";
+      }
+      mover.dotted[accent="true" i] > :first-child {
+        font-feature-settings: "dtls" 0;
+      }
+      
+      /* Other rules for scriptlevel, displaystyle and math-shift */
+      munder > :nth-child(2),
+      munderover > :nth-child(2) {
+        math-shift: compact
+      }
+      munder[accentunder="true" i] > :not(:first-child),
+      mover[accent="true" i] > :not(:first-child) {
+        math-depth: inherit;
+        math-style: inherit;
+        math-shift: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <div><strong>Presentazione</strong><span style="white-space: pre-wrap">&#x20;</span><span style="display: inline-block"></span></div>
+    <div>Studente neodiplomato Liceo Scientifico F. Lussana. Sono appassionato di fisica, matematica, informatica ed elettronica. Voglio studiare Fisica all’università. Durante il mio tempo libero mi dedico all’alpinismo, all’atletica e alla fotografia. Sono molto socievole e disponibile, e determinato a perseguire i miei obiettivi. Nella mia carriera vorrei dedicarmi alla ricerca.</div>
+    <div><strong>Istruzione</strong><span style="white-space: pre-wrap">&#x20;</span><span style="display: inline-block"></span></div>
+    <div></div>
+    <div>
+      <p>Ho frequentato un liceo che mi ha dato accesso ad un’istruzione di alto livello. In questo periodo ho partecipato alle olimpiadi della matematica, olimpiadi dell’informatica e olimpiadi della fisica, partecipando sia alle gare individuali che a squadre.</p>
+      <p>Queste iniziative mi hanno permesso di affinare le mie capacità di problem-solving e lavoro autonomo. Inoltre, grazie alle gare a squadre, ho sviluppato un’ottima capacità di lavorare in gruppo e relazionarmi in maniera positiva con i miei compagni di squadra.</p>
+    </div>
+    <div><strong>Esperienze</strong><span style="white-space: pre-wrap">&#x20;</span><span style="display: inline-block"></span></div>
+    <div>In questi anni ho avuto la possibilità di prendere parte ad esperienze molto prestigiose ed esclusive.</div>
+    <div>
+      <div></div>
+      <div>Sono stato ammesso allo stage di fisica organizzato dagli alumni della <strong>S.N.S. di Pisa</strong>, un prestigiosissimo stage di fisica il cui test d’ammissione consisteva in due prove scritte e un’orale. Durante questo stage ho avuto la possibilità di approfondire le mie conoscenze grazie a lezioni su <strong>Termodinamica</strong>, <strong>Fluidodinamica</strong>, <strong>Meccanica Razionale</strong>, <strong>Relatività</strong>, <strong>Elettromagnetismo</strong> e <strong>Analisi Dati</strong>. Inoltre ho avuto la possibilità di migliorare le mie competenze manuali mediante esperienze laboratoriali molto avanzate.</div>
+    </div>
+    <div>
+      <div></div>
+      <div>Sono stato ammesso a questo stage in seguito ai brillanti risultati ottenuti alle olimpiadi italiane di informatica (<strong>16° posto</strong> per due anni di fila). Durante questo stage ho avuto la possibilità di esplorare concetti avanzati di algoritmica: strutture dati come i <strong>Fenwick Tree</strong> o le <strong>Disjoint Set Union</strong>, e tecniche algoritiche come <strong>Dynamic Programming</strong>, <strong>Percorsi su grafi</strong> e <strong>Geometria computazionale</strong>. Inoltre ho conosciuto altri ragazzi estremamente competenti e ricercatori professionisti del settore.</div>
+    </div>
+    <div>
+      <div></div>
+      <div>Nel 2024 sono stato selezionato, mediante la risoluzione di 10 ardui problemi di matematica, per lo stage internazionale per studenti delle superiori <strong>Maths Beyond Limits 2024</strong>, tenutosi in Polonia. Durante questo stage ho avuto la possibilità di assistere a lezioni su vari argomenti tenute da ricercatori e professori universitari da tutto il mondo su argomenti vari, come il <strong>lambda calculus</strong>, il <strong>central limit theorem</strong> ed <strong>extremal graph theory</strong>. Inoltre ho potuto stringere amicizie molto importanti in un contesto accademico avanzato, arricchendo la mia esperienza personale di conoscenze significative.</div>
+    </div>
+    <div><strong>Premi e riconoscimenti</strong><span style="white-space: pre-wrap">&#x20;</span><span style="display: inline-block"></span></div>
+    <div>
+      <p>Partecipando alle olimpiadi scientifiche ho ottenuto negli anni molti risultati eccezionali. Ecco alcuni dei migliori:</p>
+      <ul>
+        <li>Partecipazione finale nazionale olimpiadi della fisica</li>
+        <li>3° posto Olimpiadi Italiane di Informatica a squadre 2026</li>
+        <li>34° posto gara a squadre Olimpiadi Italiane di Matematica 2025</li>
+        <li>16° posto Olimpiadi Italiane di Informatica 2024</li>
+        <li>13° posto gara a squadre Olimpiadi Italiane di Matematica 2024</li>
+        <li>16° posto Olimpiadi Italiane di Informatica 2023</li>
+      </ul>
+    </div>
+    <div><strong>Competenze</strong><span style="white-space: pre-wrap">&#x20;</span><span style="display: inline-block"></span></div>
+    <div>
+      <p>Competenze linguistiche</p>
+      <ul>
+        <li>Italiano: Madrelingua</li>
+        <li>Inglese: <strong>Certificate in Advanced English</strong> Cambridge livello <strong>C1</strong>. Codice di verifica: <strong>D0464383</strong></li>
+        <li>Tedesco: competenza base <strong>B1</strong></li>
+      </ul>
+    </div>
+    <div>
+      <p>Competenze Informatiche</p>
+      <p>So usare la suite Office (<strong>Power Point</strong>, <strong>Word</strong>, <strong>Excel</strong>) e scrivere documenti in <strong>LaTeX</strong>. So usare Windows e <strong>GNU/Linux</strong>. So programmare molto abilmente in <strong>Python</strong> (e usare le librerie più comuni) e <strong>C/C++</strong>. Inoltre ho una solida base in <strong>HTML</strong>, <strong>CSS</strong> e <strong>Javascript</strong>. Ho alcune competenze di base con <strong>KiCAD</strong> e <strong>Spice</strong>.</p>
+    </div>
+    <div>
+      <p>Soft Skills</p>
+      <p>Partecipando alle olimpiadi scientifiche a squadre ho imparato a lavorare in gruppo e a costruire relazioni positive e funzionali all’interno del team. Inoltre partecipando a molti stage ho imparato a convivere quotidianamente con altri ragazzi in contesti al di fuori dalla mia comfort zone e a diventare autonomo in tutte le questioni personali. Questo mi rende particolarmente adatto a vivere in un contesto collegiale e a lavorare in un gruppo di ricerca.</p>
+    </div>
+    <div><strong>Progetti personali</strong><span style="white-space: pre-wrap">&#x20;</span><span style="display: inline-block"></span></div>
+    <div>
+      <div>
+        <p><span style="font-variant-caps: small-caps">Multivibratore astabile con KiCAD</span></p>
+        <p>Ho progettato con KiCAD e stampato con JLCPCB un multivibratore astabile e <span style="text-decoration: underline"><a href="https://github.com/ravasioluca/multivibratore-astabile-kicad">caricato su github le schematiche</a></span>.</p>
+      </div>
+      <div>
+        <p><span style="font-variant-caps: small-caps">Low latency camera trigger basato sul suono con arduino - fotografia high-speed</span></p>
+        <p>Ho creato un device in grado di attivare una macchina fotografica per fare una fotografia non appena riceve un rumore forte. Visto che le macchine fotografiche DSLR e mirrorless hanno una latenza intrinseca molto alta (0.1s) dovuta al tempo di apertura dell’otturatore, ho messo l’otturatore in modalità manuale sempre aperto e - tenendo la macchina fotografica in una camera poco illuminata - ho connesso il mio device al flash, controllando in questo modo l’esposizione in modo artificiale. Ho ottenuto così una latenza stimata di circa <math><mn>100</mn><mi>𝜇</mi><mi>𝑠</mi></math>. Questo mi permette di visualizzare con bassa latenza eventi estremamente veloci. Visto che la maggior parte della latenza (<math><mn>80</mn><mi>𝜇</mi><mi>𝑠</mi></math>) dipende dal flash allo Xeno, in futuro progetto di fare un sistema ancora più efficiente usando un flash a bassa latenza.</p>
+      </div>
+    </div>
+    <div><strong>Letture personali</strong><span style="white-space: pre-wrap">&#x20;</span><span style="display: inline-block"></span></div>
+    <ul>
+      <li>Halliday, Resnik, Krane Fisica 1</li>
+      <li>Halliday, Resnik, Krane Fisica 2</li>
+      <li>David J. Griffiths Introduction to Electrodynamics</li>
+      <li>The art and Craft of problem solving Paul Zeitz</li>
+    </ul>
+  </body>
+</html>
