@@ -29,6 +29,10 @@
         <p>{{ page.abstract }}</p>
       {% endif %}
 
+      {% if page.content %}
+         {{ page.content }}
+      {% endif %}
+
       {% if page.links.PDF %}
         <p><a href="{{ page.links.PDF }}">Scarica PDF</a></p>
       {% endif %}
