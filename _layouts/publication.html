@@ -29,10 +29,6 @@
         <p>{{ page.abstract }}</p>
       {% endif %}
 
-      {% if page.content %}
-         {{ page.content }}
-      {% endif %}
-
       {% if page.links.PDF %}
         <p><a href="{{ page.links.PDF }}">Scarica PDF</a></p>
       {% endif %}
@@ -44,6 +40,11 @@
       {% if page.links.PDF %}
         <embed src="{{ page.links.PDF }}" type="application/pdf" width="100%" height="800px" />
       {% endif %}
+
+      {% if page.content %}
+         {{ page.content }}
+      {% endif %}
+
   
       </div>
 

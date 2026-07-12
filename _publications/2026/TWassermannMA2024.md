@@ -10,7 +10,21 @@ layout: publication
 # pub_date:       "2024"
 # semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
 abstract: "Soluzioni prova di ammissione Matematica A Toppo Wassermann Udine 2024"
-content: <iframe src="https://ravasioluca.github.io/assets/files/html/TWassermannMA2024.html" width="100%" height="500px" title="Embedded Content"> . </iframe>
+content: >-
+      <div id="contenuto-dinamico">Caricamento in corso...</div>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        fetch('https://ravasioluca.github.io/assets/files/html/TWassermannMA2024.html').then(response => {
+            if (!response.ok) throw new Error('Errore nel caricamento dell\'HTML');
+            return response.text();
+        }).then(html => {
+            // Inseriamo l'HTML nel div. 
+            // Ora questo HTML erediterà TUTTO il CSS della tua pagina!
+            document.getElementById('contenuto-dinamico').innerHTML = html;
+        }).catch(error => console.error('Errore:', error));
+      });
+      </script>
+    </div>
 # cover:          /assets/images/covers/cover3.jpg
 authors:
   - Luca Ravasio
