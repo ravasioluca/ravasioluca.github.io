@@ -45,11 +45,11 @@
          {{ page.content }}
       {% endif %}
 
-      {% if page.html-content %}
+      {% if page.links.html%}
         <div id="contenuto-dinamico">Caricamento in corso...</div>
           <script>
             document.addEventListener("DOMContentLoaded", () => {
-            fetch('{{ page.html-content }}').then(response => {
+            fetch('{{ page.links.html }}').then(response => {
                 if (!response.ok) throw new Error('Errore nel caricamento dell\'HTML');
                 return response.text();
             }).then(html => {
