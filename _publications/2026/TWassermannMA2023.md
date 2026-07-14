@@ -1,0 +1,20 @@
+---
+title: "Sol. T. Wasserman Mat. A 2023"
+date: 2026-07-14
+selected: false
+layout: publication
+# pub:            "International Conference on Machine Learning (ICML)"
+# pub_pre:        "Submitted to "
+# pub_post:       'Under review.'
+# pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
+# pub_date:       "2024"
+# semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
+abstract: "Soluzioni prova di ammissione Matematica A Toppo Wassermann Udine 2023"
+# content: 
+# cover:          /assets/images/covers/cover3.jpg
+authors:
+  - Luca Ravasio
+links:
+  PDF: https://ravasioluca.github.io/assets/files/PDFS/TWassermannMA2023.pdf
+  html: https://ravasioluca.github.io/assets/files/html/TWassermannMA2023.html
+---
