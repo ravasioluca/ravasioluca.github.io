@@ -1,0 +1,20 @@
+---
+title: "Sol. IUSS Matematica 2024"
+date: 2026-07-29
+selected: false
+layout: publication
+# pub:            "International Conference on Machine Learning (ICML)"
+# pub_pre:        "Submitted to "
+# pub_post:       'Under review.'
+# pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
+# pub_date:       "2024"
+# semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
+abstract: "Soluzioni prova di ammissione di matematica IUSS Pavia 2024"
+# content: 
+# cover:          /assets/images/covers/cover3.jpg
+authors:
+  - Luca Ravasio
+links:
+  PDF: https://ravasioluca.github.io/assets/files/PDFS/IUSSMAT2024.pdf
+  html: https://ravasioluca.github.io/assets/files/html/IUSSMAT2024.html
+---
