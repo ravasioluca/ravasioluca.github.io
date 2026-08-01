@@ -1,6 +1,6 @@
 ---
 title: "Sol. IUSS Matematica 2024"
-date: 2026-07-29
+date: 2026-07-31
 selected: false
 layout: publication
 # pub:            "International Conference on Machine Learning (ICML)"
