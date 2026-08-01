@@ -1,0 +1,76 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Soluzioni Prova Fisica 
+ IUSS 2024</title><meta name="authors" content="Luca Ravasio"><style>/* Alignment */
+mtable.right-align mtd,
+mtable mtd.right-align,
+mtable.left-align mtd.right-align,
+mtable.aligned mtd:nth-child(odd) {
+  justify-items: end;
+  text-align: right;
+}
+mtable.cases mtd,
+mtable.left-align mtd,
+mtable mtd.left-align,
+mtable.aligned mtd:nth-child(even),
+math:is(:not([display])) > mtable.multiline-equation mtd {
+  justify-items: start;
+  text-align: left;
+}
+mtable.cases mtd,
+mtable.aligned mtd,
+mtable mtd.flushed,
+mtable mtd.left-flush {
+  padding-left: 0;
+}
+mtable.cases mtd,
+mtable.aligned mtd,
+mtable mtd.flushed,
+mtable mtd.right-flush {
+  padding-right: 0;
+}
+
+/* Tables */
+mtable {
+  math-style: inherit;
+}
+mtd {
+  math-depth: auto-add;
+  math-style: compact;
+  math-shift: compact;
+}
+
+/* Equations */
+mtable.multiline-equation mtd {
+  math-depth: inherit;
+  math-style: inherit;
+  math-shift: inherit;
+  padding: 0;
+}
+math > mtable.multiline-equation mtr:not(:last-child) mtd {
+  padding-bottom: 0.5em;
+}
+
+/* Fractions */
+mfrac {
+  padding-inline: 0;
+  margin-inline: 0.1em;
+}
+
+/* Accents */
+mover[accent="true" i] > :first-child {
+  font-feature-settings: "dtls";
+}
+mover.dotted[accent="true" i] > :first-child {
+  font-feature-settings: "dtls" 0;
+}
+
+/* Other rules for scriptlevel, displaystyle and math-shift */
+munder > :nth-child(2),
+munderover > :nth-child(2) {
+  math-shift: compact
+}
+munder[accentunder="true" i] > :not(:first-child),
+mover[accent="true" i] > :not(:first-child) {
+  math-depth: inherit;
+  math-style: inherit;
+  math-shift: inherit;
+}</style></head><body><p>Questa è la soluzione di una prova di Fisica della IUSS che ho fatto per allenamento (2024). Se trovate un errore o pensate che possa essere fatta in maniera più elegate, scrivetemi pure a: <span style="text-decoration: underline"><a href="mailto:4vbwaikua@mozmail.com">4vbwaikua@mozmail.com</a></span> Thankssss!</p><p><strong>Esercizio 1.</strong></p><p>Visto che il proiettile si conficca nel ghiaccio l’urto è totalmente anaelastico.</p><math display="block"><msub><mi>𝑚</mi><mi>𝑝</mi></msub><msub><mi>𝑣</mi><mi>𝑝</mi></msub><mo>=</mo><mrow><mo>(</mo><mrow><msub><mi>𝑚</mi><mi>𝑝</mi></msub><mo>+</mo><msub><mi>𝑚</mi><mi>𝑔</mi></msub></mrow><mo>)</mo></mrow><msub><mi>𝑣</mi><mi>𝑓</mi></msub></math><p>Ora, considerando che il proiettile alla fine sarà a zero gradi possiamo fare le seguenti considerazioni energetiche:</p><math display="block"><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>𝑚</mi><mi>𝑝</mi></msub><msubsup><mi>𝑣</mi><mi>𝑝</mi><mn>2</mn></msubsup><mo>+</mo><msub><mi>𝑐</mi><mi>𝑝</mi></msub><msub><mi>𝑚</mi><mi>𝑝</mi></msub><mi mathvariant="normal">Δ</mi><mi>𝑇</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mrow><mo>(</mo><mrow><msub><mi>𝑚</mi><mi>𝑝</mi></msub><mo>+</mo><msub><mi>𝑚</mi><mi>𝑔</mi></msub></mrow><mo>)</mo></mrow><msubsup><mi>𝑣</mi><mi>𝑓</mi><mn>2</mn></msubsup><mo>+</mo><msub><mi>𝑚</mi><mi>𝑓</mi></msub><msub><mi>𝐿</mi><mi>𝑓</mi></msub></math><p>Da cui:</p><math display="block"><mfrac><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>𝑚</mi><mi>𝑝</mi></msub><msubsup><mi>𝑣</mi><mi>𝑝</mi><mn>2</mn></msubsup><mo>+</mo><msub><mi>𝑐</mi><mi>𝑝</mi></msub><msub><mi>𝑚</mi><mi>𝑝</mi></msub><mi mathvariant="normal">Δ</mi><mi>𝑇</mi><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mfrac><msubsup><mi>𝑚</mi><mi>𝑝</mi><mn>2</mn></msubsup><mrow><msub><mi>𝑚</mi><mi>𝑝</mi></msub><mo lspace="0em" rspace="0em">+</mo><msub><mi>𝑚</mi><mi>𝑔</mi></msub></mrow></mfrac><msubsup><mi>𝑣</mi><mi>𝑝</mi><mn>2</mn></msubsup></mrow><msub><mi>𝐿</mi><mi>𝑓</mi></msub></mfrac><mo>=</mo><msub><mi>𝑚</mi><mi>𝑓</mi></msub><mo>=</mo><mn>1.08</mn><mspace width="0.2222em"/><mtext>g</mtext></math><p><strong>Esercizio 2.</strong></p><p>La condizione di stabilità è che la forza di gravità sia almeno uguale alla forza centripeta.</p><math display="block"><mi>𝐺</mi><mfrac><mi>𝑀</mi><msup><mi>𝑅</mi><mn>2</mn></msup></mfrac><mo>≥</mo><msup><mi>𝜔</mi><mn>2</mn></msup><mi>𝑅</mi><mo stretchy="false">⇒</mo><mi>𝐺</mi><mfrac><mi>𝑀</mi><msup><mi>𝜔</mi><mn>2</mn></msup></mfrac><mo>≥</mo><msup><mi>𝑅</mi><mn>3</mn></msup></math><p>Da cui:</p><math display="block"><mi>𝜌</mi><mo>=</mo><mfrac><mi>𝑀</mi><mrow><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>𝜋</mi><msup><mi>𝑅</mi><mn>3</mn></msup></mrow></mfrac><mo>≤</mo><mfrac><mrow><mn>3</mn><msup><mi>𝜔</mi><mn>2</mn></msup></mrow><mrow><mn>4</mn><mi>𝐺</mi><mi>𝜋</mi></mrow></mfrac><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mfrac><msup><mrow><mo>(</mo><mrow><mn>2</mn><mi>𝜋</mi><mi>𝜈</mi></mrow><mo>)</mo></mrow><mn>2</mn></msup><mrow><mi>𝐺</mi><mi>𝜋</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>3</mn><mi>𝜋</mi><msup><mi>𝜈</mi><mn>2</mn></msup></mrow><mi>𝐺</mi></mfrac><mo>≈</mo><mn>7.24</mn><mo lspace="0.2222222222222222em" rspace="0.2222222222222222em">⋅</mo><msup><mn>10</mn><mn>16</mn></msup><msup><mtext> kg/m</mtext><mn>3</mn></msup></math><p>Ora, poichè un grammo di idrogeno corrisponde ad una mole e la massa dell’elettrone è di gran lunga inferiore a quella del protone:</p><math display="block"><msub><mi>𝑚</mi><mi>𝑝</mi></msub><mo>=</mo><mfrac><mrow><mn>1</mn><mspace width="0.2222em"/><mtext>g</mtext></mrow><msub><mi>𝑁</mi><mi>𝐴</mi></msub></mfrac></math><p>da cui:</p><math display="block"><msub><mi>𝜌</mi><mi>𝑝</mi></msub><mo>=</mo><mfrac><msub><mi>𝑚</mi><mi>𝑝</mi></msub><mrow><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>𝜋</mi><msubsup><mi>𝑟</mi><mi>𝑝</mi><mn>3</mn></msubsup></mrow></mfrac><mo>=</mo><mn>6.91</mn><mo lspace="0.2222222222222222em" rspace="0.2222222222222222em">⋅</mo><msup><mn>10</mn><mn>17</mn></msup><msup><mtext> kg/m</mtext><mn>3</mn></msup></math><p>Dunque il lower bound della stima della densità di una stella a neutroni è un decimo della densità di un neutrone/protone.</p><p><strong>Esercizio 3.</strong></p><p>Non sappiamo se il sangue si muove verso la sonda o in senso opposto, tuttavia possiamo usare l’effetto doppler per calcolare quello che succede quando il suono raggiunge i globuli rossi e quando il rimbalzo raggiunge la sonda in entrambi i casi:</p><math display="block"><mi>𝜈</mi><mo form="postfix">′</mo><mo>=</mo><mi>𝜈</mi><mfrac><mrow><msub><mi>𝑣</mi><mi>𝑠</mi></msub><mo>±</mo><mi>𝑣</mi></mrow><mi>𝑣</mi></mfrac><mo lspace="0.2222222222222222em" rspace="0.2222222222222222em">⋅</mo><mfrac><mi>𝑣</mi><mrow><msub><mi>𝑣</mi><mi>𝑠</mi></msub><mo>∓</mo><mi>𝑣</mi></mrow></mfrac><mo>=</mo><mi>𝜈</mi><mo lspace="0.2222222222222222em" rspace="0.2222222222222222em">⋅</mo><mfrac><mrow><mn>1</mn><mo>±</mo><mrow><mo>(</mo><mfrac><mi>𝑣</mi><msub><mi>𝑣</mi><mi>𝑠</mi></msub></mfrac><mo>)</mo></mrow></mrow><mrow><mn>1</mn><mo>∓</mo><mrow><mo>(</mo><mfrac><mi>𝑣</mi><msub><mi>𝑣</mi><mi>𝑠</mi></msub></mfrac><mo>)</mo></mrow></mrow></mfrac><mo>=</mo><mi>𝜈</mi><mo lspace="0.2222222222222222em" rspace="0.2222222222222222em">⋅</mo><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>±</mo><mfrac><mi>𝑣</mi><msub><mi>𝑣</mi><mi>𝑠</mi></msub></mfrac></mrow><mo>)</mo></mrow><mn>2</mn></msup><mo>=</mo><mi>𝜈</mi><mo lspace="0.2222222222222222em" rspace="0.2222222222222222em">⋅</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>±</mo><mn>2</mn><mfrac><mi>𝑣</mi><msub><mi>𝑣</mi><mi>𝑠</mi></msub></mfrac></mrow><mo>)</mo></mrow></math><p>Da cui:</p><math display="block"><mi mathvariant="normal">Δ</mi><mi>𝜈</mi><mo>=</mo><mi>𝜈</mi><mo lspace="0.2222222222222222em" rspace="0.2222222222222222em">⋅</mo><mn>2</mn><mfrac><mi>𝑣</mi><msub><mi>𝑣</mi><mi>𝑠</mi></msub></mfrac><mo>=</mo><mn>1.30</mn><mspace width="0.2222em"/><mtext>kHz</mtext></math><p><strong>Esercizio 4.</strong></p><p>Questo è un banale esempio di effetto Hall. Basta sapere che:</p><math display="block"><mi>𝑖</mi><mo>=</mo><mi>𝑗</mi><mo lspace="0.2222222222222222em" rspace="0.2222222222222222em">⋅</mo><mi>𝑆</mi><mo>=</mo><mi>𝑒</mi><mi>𝑛</mi><msub><mi>𝑣</mi><mi>𝑑</mi></msub><mo lspace="0.2222222222222222em" rspace="0.2222222222222222em">⋅</mo><mi>𝑆</mi></math><p>Ora, considerando che la forza elettrica e la forza di Lorentz si devono bilanciare:</p><math display="block"><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>𝑉</mi></mrow><mi>𝑤</mi></mfrac><mi>𝑒</mi><mo>=</mo><mi>𝑒</mi><msub><mi>𝑣</mi><mi>𝑑</mi></msub><mi>𝐵</mi><mo stretchy="false">⇒</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>𝑉</mi></mrow><mrow><mi>𝑤</mi><mi>𝐵</mi></mrow></mfrac><mo>=</mo><msub><mi>𝑣</mi><mi>𝑑</mi></msub></math><p>Da cui:</p><math display="block"><mfrac><mrow><mi>𝑖</mi><mi>𝐵</mi></mrow><mrow><mi>𝑒</mi><mi>𝑠</mi><mi mathvariant="normal">Δ</mi><mi>𝑉</mi></mrow></mfrac><mo>=</mo><mi>𝑛</mi><mo>=</mo><mn>8.51</mn><mo lspace="0.2222222222222222em" rspace="0.2222222222222222em">⋅</mo><msup><mn>10</mn><mn>22</mn></msup><msup><mtext>cm</mtext><mrow><mo>−</mo><mn>3</mn></mrow></msup></math><p><strong>Esercizio 5.</strong></p><p>Il fenomeno fisico alla base del funzionamento dei pannelli fotovoltaici è l’effetto fotoelettrico. A. Einstein ricevette un nobel per lo studio di questo fenomeno. Nel modello atomico di Bohr e nel modello atomico di Rutherford gli elettroni sono legati al nucleo (hanno energia potenziale elettrica negativa). Quando vengono colpiti da un fotone con un energia (e quindi una frequenza, poichè <math><mi>𝐸</mi><mo>=</mo><mi>ℎ</mi><mi>𝜈</mi></math>) abbastanza alta da colmare il “muro” di energia potenziale elettrica negativa gli elettroni si svincolano dal nucleo del loro atomo, diventando elettroni liberi. L’energia rimanente a questi elettroni è direttamente proporzionale all’energia del fotone più l’energia potenziale elettrica iniziale (che è negativa).</p><p>La potenza dissipata da un circuito elettrico è <math><mi>𝑉</mi><mi>𝐼</mi></math>. Dunque:</p><math display="block"><mfrac><mi>𝑃</mi><mrow><mi>𝑉</mi><mi>𝐼</mi></mrow></mfrac><mo>≈</mo><mn>11.9</mn><mo>≤</mo><mn>12</mn><mspace width="0.2222em"/><mtext> (il numero di pannelli deve essere intero)</mtext></math><p>E’ facile intuire geometricamente che in queste condizioni i pannelli solari sono perpendicolati ai raggi di sole (60° + 90° + 30° = 180°). Dunque, visto che <math><mi>𝑐</mi><mo>≈</mo><mn>3</mn><mo lspace="0.2222222222222222em" rspace="0.2222222222222222em">⋅</mo><msup><mn>10</mn><mn>8</mn></msup><mspace width="0.2222em"/><mtext>m/s</mtext></math>, segue che:</p><math display="block"><mi>𝑡</mi><mo>=</mo><mfrac><mi>𝐸</mi><mrow><mn>12</mn><mo lspace="0.2222222222222222em" rspace="0.2222222222222222em">⋅</mo><mn>2</mn><mo lspace="0.2222222222222222em" rspace="0.2222222222222222em">⋅</mo><mn>20</mn><mi>%</mi><mo lspace="0.2222222222222222em" rspace="0.2222222222222222em">⋅</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>−</mo><mn>40</mn><mi>%</mi></mrow><mo>)</mo></mrow><mo lspace="0.2222222222222222em" rspace="0.2222222222222222em">⋅</mo><mfrac><mi>𝐼</mi><mrow><mn>4</mn><mi>𝜋</mi><msup><mrow><mo>(</mo><mrow><mi>𝑐</mi><mo lspace="0em" rspace="0em">⋅</mo><mi>𝜏</mi></mrow><mo>)</mo></mrow><mn>2</mn></msup></mrow></mfrac></mrow></mfrac><mo>≈</mo><mn>14.7</mn><mspace width="0.2222em"/><mtext>min</mtext></math></body></html>
