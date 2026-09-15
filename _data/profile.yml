@@ -3,9 +3,9 @@ secondary_name: "Ravasio"
 navbar_name: "Luca Ravasio"
 
 positions:
-- name: Neodiplomato
-- name: Liceo Scientifico F. Lussana
-  logo: https://www.liceolussana.edu.it/wp-content/uploads/2025/01/LogoLussana.png
+- name: Studente universitario
+- name: Normale di Pisa
+  logo: /assets/images/badges/logo_sns.png
 
 
 email: "4vbwaikua@mozmail.com"
