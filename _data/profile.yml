@@ -35,6 +35,10 @@ education:
     Tradizionale con tedesco.
   date: 2021 - 2026
 
+- name: Scuola Normale Superiore di Pisa
+  logo: /assets/images/badges/logo_sns.png
+  date: 2026-present
+
 experience:
 - name: PO olimpiadi informatica
   logo: /assets/images/badges/logo_ANPC.png
