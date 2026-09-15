@@ -23,7 +23,7 @@ instagram: lucaravasi0
 
 short_bio_text_justify: true
 short_bio: >-
-  Neodiplomato del Liceo Scientifico Statale Filippo Lussana. Appassionato di olimpiadi di matematica, fisica e informatica. Ogni tanto mi diverto anche a saldare qualche progetto con arduino, scrivere una neural network con pytorch o cercare quarzi in montagna. Sono anche un appassionato di fotografia.
+Studente della Normale di Pisa (Fisica). Appassionato di olimpiadi di matematica, fisica e informatica. Ogni tanto mi diverto anche a saldare qualche progetto con arduino, scrivere una neural network con pytorch o cercare quarzi in montagna. Sono anche un appassionato di fotografia.
 portrait_url: /assets/images/photos/portrait.jpg
 portrait_caption: >-
   Sono anche appassionato di fotografia.
@@ -37,7 +37,7 @@ education:
 
 - name: Scuola Normale Superiore di Pisa
   logo: /assets/images/badges/logo_sns.png
-  date: 2026-present
+  date: 2026 - present
 
 experience:
 - name: PO olimpiadi informatica
