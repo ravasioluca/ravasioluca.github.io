@@ -29,15 +29,15 @@ portrait_caption: >-
   Sono anche appassionato di fotografia.
 
 education:
+- name: Scuola Normale Superiore di Pisa
+  logo: /assets/images/badges/logo_sns.png
+  position: Fisica
+  date: 2026 - present
 - name: Liceo Scientifico Statale Filippo Lussana
   logo: https://www.liceolussana.edu.it/wp-content/uploads/2025/01/LogoLussana.png
   position: >- 
     Tradizionale con tedesco.
   date: 2021 - 2026
-
-- name: Scuola Normale Superiore di Pisa
-  logo: /assets/images/badges/logo_sns.png
-  date: 2026 - present
 
 experience:
 - name: PO olimpiadi informatica
